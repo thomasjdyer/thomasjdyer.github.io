@@ -1,0 +1,506 @@
+:root {
+  --bg: #eeeaf8;
+  --surface: #f8f6ff;
+  --surface-2: #ded5f7;
+  --text: #1f1f26;
+  --muted: #666474;
+  --lavender: #a995e8;
+  --lavender-soft: #dcd2f5;
+  --lavender-deep: #6c56b8;
+  --line: rgba(31, 31, 38, 0.10);
+}
+
+
+/* ---------- Whole page ---------- */
+
+html,
+body {
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(150, 125, 220, 0.42),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 18% 72%,
+      rgba(186, 165, 235, 0.38),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #e8e1f4 0%,
+      #dcd1ef 100%
+    );
+
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100%;
+}
+
+body {
+  font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* Make Quarto containers transparent */
+
+#quarto-content,
+.page-columns,
+main,
+.content {
+  background: transparent !important;
+}
+
+main {
+  max-width: 1120px;
+  margin: auto;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  background: rgba(238, 234, 248, 0.88) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.navbar-brand {
+  color: var(--text) !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar-nav .nav-link {
+  color: var(--muted) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--lavender-deep) !important;
+}
+
+
+/* ---------- Typography ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.05;
+  font-weight: 750;
+}
+
+h2 {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+
+p {
+  color: var(--text);
+}
+
+a {
+  color: var(--lavender-deep);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4d3cc8;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 3rem 0 2rem 0;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  line-height: 1;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  max-width: 800px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-subtitle {
+  max-width: 820px;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin-top: 0;
+}
+
+.hero-meta {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.hero-kicker {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: var(--lavender-soft);
+  color: var(--lavender-deep);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* ---------- Research ---------- */
+
+.research-section {
+  padding: 0rem 0 0rem 0;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.research-card {
+  background: rgba(248, 246, 255, 0.82);
+  border: 1px solid rgba(108, 86, 184, 0.12);
+  border-radius: 20px;
+  padding: 1.8rem;
+  min-height: 240px;
+
+  box-shadow:
+    0 8px 25px rgba(70, 55, 110, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(108, 86, 184, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(70, 55, 110, 0.12);
+}
+
+
+/* ---------- Current work ---------- */
+
+.current-work {
+  margin: 5rem 0;
+  padding: 3rem;
+  border-radius: 24px;
+  background: #2b2735;
+  color: #f7f4ff;
+}
+
+.current-work h2,
+.current-work p {
+  color: #f7f4ff;
+}
+
+
+/* ---------- Persistent profile sidebar ---------- */
+
+.profile-card {
+  position: fixed;
+  top: 7rem;
+  left: max(2rem, calc((100vw - 1280px) / 2));
+  width: 235px;
+  z-index: 10;
+}
+
+.profile-photo {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1.4rem;
+
+  border: 4px solid rgba(255, 255, 255, 0.75);
+
+  box-shadow:
+    0 8px 24px rgba(70, 55, 110, 0.12);
+}
+
+.profile-card h2 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.55rem;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.profile-role {
+  margin: 0.2rem 0 0.8rem 0 !important;
+  font-weight: 600;
+  color: var(--text) !important;
+  line-height: 1.4 !important;
+}
+
+.profile-affiliation {
+  margin: 0 0 1.3rem 0 !important;
+  color: var(--muted) !important;
+  font-size: 0.92rem;
+  line-height: 1.45 !important;
+}
+
+
+/* ---------- Sidebar links ---------- */
+
+.profile-links {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.profile-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  margin: 0.35rem 0;
+  padding: 0.4rem 0;
+
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.profile-links a i {
+  width: 18px;
+  text-align: center;
+  color: var(--lavender-deep);
+}
+
+.profile-links a:hover {
+  color: var(--lavender-deep);
+  transform: translateX(3px);
+}
+
+
+/* ---------- Main content positioning ---------- */
+
+#quarto-content {
+  margin-left: 300px;
+}
+
+main.content {
+  max-width: 900px;
+}
+
+
+/* ---------- Footer ---------- */
+
+.nav-footer {
+  background: transparent;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 900px) {
+
+  .profile-card {
+    position: static;
+    width: auto;
+    margin: 2rem 1.5rem;
+  }
+
+  .profile-photo {
+    width: 135px;
+    height: 135px;
+  }
+
+  #quarto-content {
+    margin-left: 0;
+  }
+
+  main.content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .hero {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Footer email ---------- */
+
+.email-hover {
+  position: relative;
+  display: inline-block;
+  min-width: 220px;
+}
+
+.email-obscured,
+.email-real {
+  transition: opacity 0.2s ease;
+}
+
+.email-obscured {
+  color: var(--lavender-deep);
+}
+
+.email-real {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+  color: var(--lavender-deep);
+  text-decoration: none;
+}
+
+.email-hover:hover .email-obscured {
+  opacity: 0;
+}
+
+.email-hover:hover .email-real {
+  opacity: 1;
+}
+
+.email-real:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Publications ---------- */
+
+.publication-card {
+  background: rgba(248, 246, 255, 0.78);
+  border: 1px solid rgba(108, 86, 184, 0.14);
+  border-radius: 18px;
+
+  padding: 1.5rem;
+  margin: 0 0 1.5rem 0;
+
+  box-shadow:
+    0 6px 20px rgba(70, 55, 110, 0.05);
+}
+
+.publication-card h2 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.publication-card p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.publication-meta {
+  color: var(--lavender-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.publication-abstract {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.publication-abstract h3 {
+  margin-top: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.publication-abstract p {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.pub-button {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+
+  background: var(--lavender-deep);
+  color: white !important;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.pub-button-secondary {
+  background: var(--lavender-soft);
+  color: var(--lavender-deep) !important;
+}
+
+/* ---------- Education ---------- */
+
+.education-item {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.education-item:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.education-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.25rem;
+}
+
+.education-item p {
+  margin: 0.4rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
