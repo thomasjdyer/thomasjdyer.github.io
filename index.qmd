@@ -1,0 +1,105 @@
+---
+title: ""
+title-block-style: none
+toc: false
+---
+
+::: {.hero}
+
+
+# Understanding the physical nature of small Solar System bodies
+
+<div class="hero-subtitle">
+
+I study asteroids and the Martian moons using thermophysical modelling, spectroscopy, and large astronomical datasets.
+
+My research focuses on how composition, surface properties, rotation, and thermal behaviour can help us understand the origin and evolution of small bodies throughout the Solar System.
+
+</div>
+
+<div class="hero-meta">
+
+PhD Researcher · Laboratoire Lagrange · Observatoire de la Côte d'Azur
+
+</div>
+
+
+::: {.research-section}
+
+## Research
+
+My work currently spans three closely connected areas of planetary science.
+
+::: {.research-grid}
+
+::: {.research-card}
+
+### Martian moons
+
+I study the surface properties and composition of **Phobos and Deimos**, with particular interest in how remote-sensing observations can constrain their origin and evolution.
+
+My work includes the analysis of visible and infrared spectroscopy and the development of methods relevant to the **Martian Moons eXploration (MMX)** mission.
+
+:::
+
+::: {.research-card}
+
+### Asteroid thermophysics
+
+I investigate how asteroids absorb, conduct, and emit heat, using thermal inertia, rotation, thermophysical modelling, and thermal-infrared observations to better understand the physical properties of their surfaces.
+
+This work will be relevant for the planned Near-Earth Object Mission in the Infrared (NEOMIR), which is a part of ESA's Planetary Defence objective.
+
+:::
+
+::: {.research-card}
+
+### Small-body populations
+
+I use large astronomical datasets to investigate asteroid populations and the relationships between their physical and compositional properties.
+
+A major part of this work involves **MP3C**, combining measurements of rotation, taxonomy, albedo, thermal properties, and orbital parameters.
+
+[Visit MP3C →](https://mp3c.le.ac.uk)
+:::
+
+:::
+
+:::
+
+
+## Education
+
+::: {.education-item}
+
+### PhD Candidate in Planetary Science
+
+**Université Côte d'Azur · Observatoire de la Côte d'Azur**  
+2025–present
+
+Research focused on thermophysical modelling of small Solar System bodies, with particular emphasis on the Martian moons and asteroids.
+
+:::
+
+::: {.education-item}
+
+### Physics with Astrophysics with Year Abroad MPhys
+
+**University of Leicester and Rijksuniversiteit Groningen**
+
+Graduated 2026 · Upper Second-Class Honours (2:1)
+
+Research included asteroid rotation, spectroscopy, and the physical properties of small Solar System bodies.
+
+:::
+
+
+
+## About this site
+
+This site collects information about my research, publications, projects, and academic activities.
+
+You can find a full list of my work on the [Publications](publications.qmd) page, and more as I populate it.
+
+
+
