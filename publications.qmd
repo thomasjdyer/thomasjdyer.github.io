@@ -5,6 +5,8 @@ toc: false
 
 # Publications
 
+First-author publications
+
 ::: {.publication-card}
 
 <div class="publication-meta">
@@ -13,7 +15,7 @@ toc: false
 
 ## Infrared-to-visible albedo ratio of Phobos. Comparison with primitive asteroids.
 
-**Thomas J. Dyer**, et al.
+**T. J. Dyer**, J. Beccarelli, M. Delbo, C. Avdellidou, M. Pajola, A. Milton, A. Lucchetti, G. Munaretto
 
 <div class="publication-abstract">
 
@@ -55,5 +57,97 @@ We investigated whether the valley that separates fast and slow rotators in rota
 [Read paper](https://doi.org/10.1051/0004-6361/202558305){.pub-button}
 
 </div>
+
+:::
+
+Co-authored publications
+
+::: {.publication-card}
+
+<div class="publication-meta">
+2026 · Astronomy & Astrophysics
+</div>
+
+##  Gaia and IRTF abundance of A-type main-belt asteroids
+
+
+M. Delbo, C. Avdellidou, M. Galinier, U. Bhat, **T.J. Dyer**, B.T. Bolin, L. Galluccio
+
+<div class="publication-abstract">
+
+### Abstract
+
+We investigated whether the valley that separates fast and slow rotators in rotational period–diameter space depends on asteroid composition. We approximated the composition using the asteroids’ spectral class.
+
+</div>
+
+<div class="publication-links">
+
+[Read paper](https://doi.org/10.1051/0004-6361/202556827){.pub-button}
+
+</div>
+
+:::
+
+::: {.publication-card}
+
+<div class="publication-meta">
+2026 · Astronomy & Astrophysics
+</div>
+
+##  Searching for primitive, dark, spectrally red asteroid families in the main belt with Gaia
+
+U. Bhat, C. Avdellidou, M. Delbo, **T.J. Dyer**
+
+
+<div class="publication-links">
+
+[Read paper](https://doi.org/10.1051/0004-6361/202556827){.pub-button}
+
+</div>
+
+:::
+
+# Conferences & Presentations
+
+::: {.publication-card}
+
+##  Asteroids, Comets, Meteors 2026 (ACM2026)
+
+
+Poznań, Poland
+
+<div class="publication-abstract">
+
+<span>Poster: Asteroid rotation dependence on composition</span>
+
+[pdf](files/Asteroid_Rotation_ACM2026.pdf){.pub-button}
+
+</div>
+
+<div class="publication-abstract">
+
+<span>Poster: Infrared-to-visible albedo ratio of Phobos. Comparison with primitive asteroids.</span>
+
+[pdf](files/Phobos_ACM2026.pdf){.pub-button}
+
+</div>
+:::
+
+
+::: {.publication-card}
+
+##  British Planetary Science Conference 2026 (BPSC2026)
+
+
+Poznań, Poland
+
+<div class="publication-abstract">
+
+<span>Oral presentation: Asteroid rotation dependence on composition</span> 
+
+[pdf](files/Asteroid_Rotation_BPSC2026.pdf){.pub-button}
+</div>
+
 
 :::

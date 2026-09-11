@@ -12,8 +12,6 @@ website:
         text: Home
       - href: publications.qmd
         text: Publications
-      - href: files/CV.pdf
-        text: CV
 
   page-footer:
     center: |

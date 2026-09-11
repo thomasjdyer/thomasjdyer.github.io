@@ -444,6 +444,11 @@ main.content {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .publication-abstract h3 {
@@ -468,6 +473,8 @@ main.content {
   display: inline-block;
   padding: 0.45rem 0.8rem;
   border-radius: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
 
   background: var(--lavender-deep);
   color: white !important;
